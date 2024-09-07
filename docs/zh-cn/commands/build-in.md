@@ -70,3 +70,5 @@ cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) &&
 ```
 
 第 1-9 行的内容无需更改，您只需要按照需求更改第九行之后的文本即可。
+如果是用srcpath离线安装调用当前目录,一定要加上语言参数不然会报错需要网络连接.另外也需要确保你下载的时候也添加了对应的语言模块.
+"Office Tool Plus.Console" deploy /add Standard2019Volume_zh-cn /srcpath %~dp0. /ver 16.0.XXXXXXX
